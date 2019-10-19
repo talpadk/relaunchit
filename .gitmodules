@@ -1,0 +1,3 @@
+[submodule "libremarkable-c"]
+	path = libremarkable-c
+	url = https://github.com/talpadk/libremarkable-c.git
