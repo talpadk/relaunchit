@@ -94,6 +94,7 @@ static uint8_t readSettingsLine(void){
     break;
   case SETTINGS_SECTION_ITEM:
     if (beginsWith(buffer, "title")) { storeStringValue(currentItem_->title, buffer); }
+    if (beginsWith(buffer, "command")) { storeStringValue(currentItem_->command, buffer); }
   }
   return 1;  
 }
