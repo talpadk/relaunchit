@@ -57,7 +57,7 @@ int main(void){
 	if (even) { colour = 14; }
 	remarkable_blitRect(screen, colour, 0,y, screen->vinfo.xres-1,y+settings_.itemHeight);
 	
-	remarkable_text_render_simple(screen, font_, item->title, 20, y+settings_.baselineOffset, 1, 0);
+	remarkable_text_render_simple_alpha_colour(screen, font_, item->title, 20, y+settings_.baselineOffset, 1, 0, 0, lut16Inverse_);
 	
 	y += settings_.itemHeight;
 	item = item->nextLauncherItem;
